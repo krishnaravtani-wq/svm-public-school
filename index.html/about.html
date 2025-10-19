@@ -4,167 +4,115 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us - S.V.M. Public School</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
-      font-family: "Poppins", sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f9fafc;
+      background-color: #f6f8ff;
       color: #333;
     }
 
     header {
-      background: linear-gradient(90deg, #ff9966, #ff5e62);
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
       color: white;
       text-align: center;
-      padding: 20px 0;
+      padding: 40px 20px;
     }
 
-    header h1 {
+    h1 {
       margin: 0;
       font-size: 2.5em;
     }
 
-    nav {
-      background-color: #222;
-      text-align: center;
-      padding: 10px 0;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 10px 20px;
-      display: inline-block;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      background-color: #ff9966;
-      color: black;
-      border-radius: 5px;
-    }
-
     .about-section {
       padding: 40px;
-      text-align: center;
+      max-width: 1000px;
+      margin: auto;
+      line-height: 1.7;
+      text-align: justify;
     }
 
     .about-section h2 {
-      color: #ff5e62;
-      font-size: 2em;
+      text-align: center;
+      color: #2a5298;
       margin-bottom: 20px;
     }
 
-    .about-section p {
-      max-width: 900px;
-      margin: auto;
-      font-size: 1.1em;
-      line-height: 1.8;
-      color: #444;
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
     }
 
-    .photo-gallery {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 40px;
-    }
-
-    .photo-gallery img {
-      width: 280px;
-      height: 200px;
-      object-fit: cover;
+    .gallery img {
+      width: 100%;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: transform 0.3s;
+      transition: 0.3s;
     }
 
-    .photo-gallery img:hover {
+    .gallery img:hover {
       transform: scale(1.05);
-    }
-
-    .mission-section, .principal-section {
-      background: white;
-      margin: 40px auto;
-      padding: 40px;
-      max-width: 900px;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-
-    .mission-section h3, .principal-section h3 {
-      color: #ff5e62;
-      margin-bottom: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
 
     footer {
-      background-color: #222;
+      background: #1e3c72;
       color: white;
       text-align: center;
       padding: 15px 0;
-      margin-top: 50px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>About S.V.M. Public School</h1>
-    <p>“Where learning inspires dreams, and dreams build the future.” 🌟</p>
+    <p>Where Education Meets Inspiration 🌟</p>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="teachers.html">Teachers</a>
-    <a href="students.html">Students</a>
-    <a href="admission.html">Admission</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
   <section class="about-section">
-    <h2>Welcome to Our School</h2>
+    <h2>Our Vision</h2>
     <p>
-      S.V.M. Public School is not just an educational institution—it is a place where students grow with curiosity, confidence, and compassion.  
-      Established with a vision to provide quality education, our school combines traditional values with modern teaching methods.  
-      We believe that every child has unlimited potential waiting to be discovered and nurtured.
+      At <strong>S.V.M. Public School</strong>, we believe that education is not just about books — 
+      it's about shaping minds, building confidence, and creating leaders for tomorrow.  
+      Our mission is to provide a nurturing and inspiring environment where every student 
+      feels valued, curious, and motivated to learn.
     </p>
 
-    <div class="photo-gallery">
-      <img src="https://via.placeholder.com/280x200?text=School+Building" alt="School Building">
-      <img src="https://via.placeholder.com/280x200?text=Classroom" alt="Classroom">
-      <img src="https://via.placeholder.com/280x200?text=Students" alt="Students">
-      <img src="https://via.placeholder.com/280x200?text=Sports+Day" alt="Sports Day">
+    <h2>Our Journey</h2>
+    <p>
+      Established with a passion for excellence, S.V.M. Public School has become a symbol of 
+      quality education and moral values. With our dedicated teachers, modern classrooms, 
+      and a commitment to all-round development, we empower students to dream big and 
+      achieve even bigger. 🌈
+    </p>
+
+    <h2>Our Campus in Glimpse 📸</h2>
+    <div class="gallery">
+      <img src="images/school_building.jpg" alt="School Building">
+      <img src="images/classroom.jpg" alt="Classroom">
+      <img src="images/students_group.jpg" alt="Students Group">
+      <img src="images/sports_day.jpg" alt="Sports Day">
+      <img src="images/teachers_team.jpg" alt="Teachers Team">
     </div>
-  </section>
 
-  <section class="mission-section">
-    <h3>🎯 Our Mission</h3>
+    <h2>Inspiring Words 💫</h2>
     <p>
-      To create a dynamic learning environment that inspires students to think critically, act responsibly, and contribute meaningfully to society.  
-      We aim to nurture not just academic excellence but also integrity, discipline, and compassion.
+      “Education is the most powerful weapon which you can use to change the world.”  
+      — <em>Nelson Mandela</em>
     </p>
-
-    <h3>🌈 Our Vision</h3>
     <p>
-      To become one of the leading educational institutions that empowers young minds to lead with wisdom, courage, and kindness.
-    </p>
-  </section>
-
-  <section class="principal-section">
-    <h3>🧑‍🏫 A Message from Our Principal</h3>
-    <p>
-      “Education is not about filling the mind with facts, but lighting a fire of curiosity that never stops burning.  
-      At S.V.M. Public School, we strive to ignite that spark in every student — to help them discover their own potential and make a positive difference in the world.”  
-      <br><br><b>- Mr. D L Maan , Principal</b>
+      “The roots of education are bitter, but the fruit is sweet.”  
+      — <em>Aristotle</em>
     </p>
   </section>
 
   <footer>
-    <p>&copy; 2025 S.V.M. Public School | Designed by KRISHHH STUDIO</p>
+    &copy; 2025 S.V.M. Public School | Designed with ❤️ by KRISHHH STUDIO
   </footer>
+
 </body>
 </html>
-
-
