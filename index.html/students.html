@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Students - S.V.M. Public School</title>
+  <style>
+    body { font-family: "Poppins", sans-serif; margin: 0; padding: 0; background: #eef3f9; }
+    header { background: linear-gradient(90deg, #0072ff, #00c6ff); color: white; text-align: center; padding: 20px 0; }
+    header h1 { margin: 0; font-size: 2.2em; }
+    nav { background-color: #222; text-align: center; padding: 10px 0; }
+    nav a { color: white; text-decoration: none; padding: 10px 20px; display: inline-block; font-weight: bold; }
+    nav a:hover { background-color: #00c6ff; color: black; border-radius: 5px; }
+    .filter-section { max-width: 1000px; margin: 30px auto; display: flex; gap: 15px; flex-wrap: wrap; }
+    .filter-section input, .filter-section select { padding: 10px; font-size: 1em; border-radius: 8px; border: 1px solid #ccc; flex: 1; min-width: 150px; }
+    table { width: 95%; margin: 20px auto 50px auto; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+    th, td { padding: 12px; border-bottom: 1px solid #ddd; text-align: left; }
+    th { background-color: #0072ff; color: white; }
+    tr:hover { background-color: #f1f1f1; }
+    footer { background-color: #222; color: white; text-align: center; padding: 15px 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>S.V.M. Public School</h1>
+    <p>Students Directory</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="teachers.html">Teachers</a>
+    <a href="students.html">Students</a>
+    <a href="admission.html">Admission</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Filters -->
+  <div class="filter-section">
+    <input type="text" id="searchName" placeholder="Search by Student Name">
+    <input type="text" id="searchParent" placeholder="Search by Parent Name">
+    <input type="text" id="searchAddress" placeholder="Search by Address">
+    <select id="searchClass">
+      <option value="">All Classes</option>
+      <option>1</option><option>2</option><option>3</option><option>4</option>
+      <option>5</option><option>6</option><option>7</option><option>8</option>
+      <option>9</option><option>10</option><option>11</option><option>12</option>
+    </select>
+  </div>
+
+  <!-- Students Table -->
+  <table id="studentsTable">
+    <thead>
+      <tr>
+        <th>Roll No</th>
+        <th>Student Name</th>
+        <th>Class</th>
+        <th>Parent Name</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Riya Sharma</td><td>1</td><td>Mr. Sharma</td><td>Main Road, City</td></tr>
+      <tr><td>2</td><td>Arjun Kumar</td><td>1</td><td>Mrs. Kumar</td><td>Main Road, City</td></tr>
+      <tr><td>3</td><td>Neha Singh</td><td>2</td><td>Mr. Singh</td><td>Park Lane, City</td></tr>
+      <tr><td>4</td><td>Rohan Verma</td><td>2</td><td>Mrs. Verma</td><td>Park Lane, City</td></tr>
+      <tr><td>5</td><td>Aditya Jain</td><td>3</td><td>Mr. Jain</td><td>City Center</td></tr>
+      <tr><td>6</td><td>Sanya Mehta</td><td>3</td><td>Mrs. Mehta</td><td>City Center</td></tr>
+      <tr><td>7</td><td>Karan Gupta</td><td>4</td><td>Mr. Gupta</td><td>Green Park</td></tr>
+      <tr><td>8</td><td>Simran Kaur</td><td>4</td><td>Mrs. Kaur</td><td>Green Park</td></tr>
+      <tr><td>9</td><td>Ritesh Sharma</td><td>5</td><td>Mr. Sharma</td><td>River Side</td></tr>
+      <tr><td>10</td><td>Ananya Singh</td><td>5</td><td>Mrs. Singh</td><td>River Side</td></tr>
+      <tr><td>11</td><td>Vikram Verma</td><td>6</td><td>Mr. Verma</td><td>Hill View</td></tr>
+      <tr><td>12</td><td>Neelam Joshi</td><td>6</td><td>Mrs. Joshi</td><td>Hill View</td></tr>
+      <tr><td>13</td><td>Adarsh Mehta</td><td>7</td><td>Mr. Mehta</td><td>Sunrise Colony</td></tr>
+      <tr><td>14</td><td>Divya Kapoor</td><td>7</td><td>Mrs. Kapoor</td><td>Sunrise Colony</td></tr>
+      <tr><td>15</td><td>Raghav Jain</td><td>8</td><td>Mr. Jain</td><td>Lakeside</td></tr>
+      <tr><td>16</td><td>Priya Sharma</td><td>8</td><td>Mrs. Sharma</td><td>Lakeside</td></tr>
+      <tr><td>17</td><td>Shivam Gupta</td><td>9</td><td>Mr. Gupta</td><td>Oak Street</td></tr>
+      <tr><td>18</td><td>Megha Singh</td><td>9</td><td>Mrs. Singh</td><td>Oak Street</td></tr>
+      <tr><td>19</td><td>Tarun Verma</td><td>10</td><td>Mr. Verma</td><td>Pine Avenue</td></tr>
+      <tr><td>20</td><td>Aarohi Mehta</td><td>10</td><td>Mrs. Mehta</td><td>Pine Avenue</td></tr>
+      <tr><td>21</td><td>Rohan Kapoor</td><td>11</td><td>Mr. Kapoor</td><td>Maple Road</td></tr>
+      <tr><td>22</td><td>Simran Sharma</td><td>11</td><td>Mrs. Sharma</td><td>Maple Road</td></tr>
+      <tr><td>23</td><td>Aryan Jain</td><td>12</td><td>Mr. Jain</td><td>Rosewood Lane</td></tr>
+      <tr><td>24</td><td>Ritika Gupta</td><td>12</td><td>Mrs. Gupta</td><td>Rosewood Lane</td></tr>
+    </tbody>
+  </table>
+
+  <footer>
+    <p>&copy; 2025 S.V.M. Public School | Designed by KRISHHH STUDIO</p>
+  </footer>
+
+  <script>
+    // FILTER FUNCTION
+    const inputs = ['searchName','searchParent','searchAddress','searchClass'];
+    inputs.forEach(id => {
+      document.getElementById(id).addEventListener('input', filterTable);
+      document.getElementById(id).addEventListener('change', filterTable);
+    });
+
+    function filterTable() {
+      const nameInput = document.getElementById("searchName").value.toLowerCase();
+      const parentInput = document.getElementById("searchParent").value.toLowerCase();
+      const addressInput = document.getElementById("searchAddress").value.toLowerCase();
+      const classInput = document.getElementById("searchClass").value.trim();
+      const table = document.getElementById("studentsTable");
+      const tr = table.getElementsByTagName("tr");
+
+      for (let i = 1; i < tr.length; i++) {
+        const tds = tr[i].getElementsByTagName("td");
+        const name = tds[1].textContent.toLowerCase();
+        const clas = tds[2].textContent.trim();
+        const parent = tds[3].textContent.toLowerCase();
+        const address = tds[4].textContent.toLowerCase();
+
+        const nameMatch = name.includes(nameInput);
+        const parentMatch = parent.includes(parentInput);
+        const addressMatch = address.includes(addressInput);
+        const classMatch = classInput === "" || clas === classInput;
+
+        tr[i].style.display = (nameMatch && parentMatch && addressMatch && classMatch) ? "" : "none";
+      }
+    }
+  </script>
+</body>
+</html>
